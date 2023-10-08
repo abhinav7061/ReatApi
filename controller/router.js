@@ -2,7 +2,6 @@ const User = require("../models/userSchema");
 const getHomepage = async (req, res) => {
     const { email, password, sort, select } = req.query; //for the quering options
     const queryObj = {};
-
     if (email) {
         queryObj.email = email;
     }
